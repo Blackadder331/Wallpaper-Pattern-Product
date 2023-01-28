@@ -1,0 +1,277 @@
+@font-face {
+    font-family: "Neue Montreal Bold";
+    src: url(./fonts/NeueMontreal-Bold.otf);
+}
+@font-face {
+    font-family: "Neue Montreal Regular";
+    src: url(./fonts/NeueMontreal-Regular.otf);
+}
+
+*{
+    font-family: "Neue Montreal Regular", sans-serif;
+}
+h1{
+    padding-top: 1.5rem;
+    margin-top: 0;
+    font-size: 3.75rem;
+    margin-bottom: .75rem;
+    padding-bottom: 0;
+    font-family: "Neue Montreal Bold";
+}
+body {
+    background-color: #526572;
+    min-height: 100vh;
+    text-align: left;
+}
+
+.card {
+    border-radius: 15px;
+    padding: 4rem;
+    background-color: white;
+    aspect-ratio: 1 / 1.618;
+    min-height: 400px;
+    min-width: 320px;
+    max-width: 42rem;
+    padding-bottom: 5rem;
+}
+.product-page {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+  
+/* .product-image {
+    width: 100%;
+    height: 30vh;
+    background-image: url(./images/2.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+} */
+
+.product-image {
+    width: 124%;
+    height: 30vh;
+    background-image: url(./images/2.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    margin-left: -4rem;
+    margin-top: -4rem;
+}
+  
+.product-image img {
+    width: 100%;
+}
+  
+.product-options {
+    width: 100%;
+}
+  
+.product-name {
+    width: 90%;
+}
+  
+.product-description {
+    width: 100%;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    margin-top: 0.25rem;
+    
+}
+  
+.price-calculator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.add-to-cart {
+    align-self: center;
+    margin-top: 3rem;
+}
+
+
+
+
+/* start */
+
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+  
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    
+}
+  
+.form-control {
+    font-family: system-ui, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;
+    display: flex;
+
+}
+  
+.form-control + .form-control {
+    margin-top: 1em;
+}
+  
+
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: var(--form-background);
+    /* Not removed via appearance */
+    margin: 0;
+  
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+  
+    display: flex;
+    place-content: center;
+    cursor: pointer;
+}
+  
+  
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+  
+input[type="radio"]:focus {
+    outline: max(1px, 0.15em) solid currentColor;
+    outline-offset: max(1px, 0.15em);
+}
+
+input[type="radio"] {
+    padding: 2.5rem;
+    margin: .7rem;
+    background-position: center;
+    background-size: contain;
+    align-self: center;
+    justify-content: center;
+}
+ 
+#one [type="radio"]{
+    background-image: url(./images/1.png);
+}
+
+#two [type="radio"]{
+    background-image: url(./images/2.png);
+}
+
+#three [type="radio"]{
+    background-image: url(./images/3.png);
+}
+
+#four [type="radio"]{
+    background-image: url(./images/4.png);
+}
+
+#five [type="radio"]{
+    background-image: url(./images/5.png);
+}
+
+.add-to-cart {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-self: flex-end;
+    background-color: black;
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    color: #eeeeee;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: .18rem;
+    font-weight: 800;
+    opacity: 1;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+    font-family: "Neue Montreal Bold";
+}
+
+.add-to-cart:hover {
+    opacity: .6;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+}
+
+#total-price{
+    font-size: 2rem;
+}
+strong{
+    font-family: "Neue Montreal Bold";
+}
+
+#square-footage {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding: .5rem 1rem;
+    color: black;
+    border-radius: 4px 0 0 4px;
+    width: 9.5rem;
+}
+
+.calc-btn{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding: .5rem 1rem;
+    color: #eeeeee;
+    background-color: black;
+    text-transform: uppercase;
+    letter-spacing: .18rem;
+    font-weight: 800;
+    opacity: 1;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+    border: 2px solid black;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+    margin-left: -4.75rem;
+    cursor: pointer;
+    font-family: "Neue Montreal Bold";
+    
+}
+
+.calc-btn:hover{
+    opacity: .6;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+#square-footage:focus{
+
+    /* border: none; */
+    outline: none;
+    cursor: text;
+
+}

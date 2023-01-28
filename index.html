@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper Product Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="product-page">
+        <div class="card">
+            <div class="product-image">
+                
+            </div>
+            <div class="product-options">
+                <form>
+                    <label class="form-control" id="one">
+                        <input type="radio" name="color" value="one" > 
+                    </label>
+                    <label class="form-control" id="two">
+                        <input type="radio" name="color" value="two" > 
+                    </label>
+                    <label class="form-control" id="three">
+                        <input type="radio" name="color" value="three" > 
+                    </label>
+                    <label class="form-control" id="four">
+                        <input type="radio" name="color" value="four" > 
+                    </label>
+                    <label class="form-control" id="five">
+                        <input type="radio" name="color" value="five" > 
+                    </label>
+                </form>
+            </div>
+            <h1 class="product-name">Naturalist Textile</h1>
+            <p class="product-description">This elegant design features intricate illustrations of various plant and animal species, creating a stunning and unique focal point in any room. The high-quality print ensures that the colors remain vibrant and true to life, while the durable material makes it easy to install and maintain. Bring a touch of the outdoors into your home and add a touch of elegance to any room with our Naturalist Illustration patterned wallpaper.</p>
+            <br>
+            <div class="price-calculator">
+                
+                <input type="number" id="square-footage" placeholder="Square footage">
+                
+                <button class="calc-btn" onclick="calculatePrice()"> Calculate </button>
+                <br>
+                <label><span id="total-price"><strong> $54</strong></span> <strong><sup> / Sq. Ft. </sup></strong> </label>
+                
+            </div>
+            <br>
+            <br>
+            <div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
